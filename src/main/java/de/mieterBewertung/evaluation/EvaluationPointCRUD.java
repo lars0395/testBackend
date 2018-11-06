@@ -15,7 +15,7 @@ public class EvaluationPointCRUD {
     private Connection connection;
 
     public EvaluationPointCRUD() {
-        this.connection = DatabaseConnection.createConnection("localhost","3306","evaluationDatabase", "root","ttsl/110");
+        this.connection = DatabaseConnection.createConnection("localhost","3306","evaluationPortal", "root","ttsl/110");
     }
 
     public List<EvaluationPoint> getEvaluationPoints() throws SQLException {

@@ -20,7 +20,7 @@ public class UserCRUD {
     private Connection con;
 
     public UserCRUD() {
-        this.con = DatabaseConnection.createConnection("localhost","3306","evaluationDatabase","root","ttsl/110");
+        this.con = DatabaseConnection.createConnection("localhost","3306","evaluationPortal","root","ttsl/110");
         if(con == null) {
             throw new RuntimeException("Database connection could not be established");
         }

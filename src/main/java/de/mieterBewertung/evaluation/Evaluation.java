@@ -72,4 +72,8 @@ public class Evaluation {
     public int countOfEvaluationPoints() {
         return this.evaluationPointList.size();
     }
+
+    public List<EvaluationPoint> getEvaluationPointList() {
+        return this.evaluationPointList;
+    }
 }

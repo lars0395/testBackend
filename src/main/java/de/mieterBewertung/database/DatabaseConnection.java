@@ -15,7 +15,7 @@ public final class DatabaseConnection {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             return DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/evaluationPortal", "root", "ttsl/110");
+                    "jdbc:mysql://"+host+":"+port+"/"+database, user, password);
         } catch (ClassNotFoundException | SQLException e) {
             LOGGER.error(e);
             return null;
